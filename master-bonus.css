@@ -18,7 +18,16 @@ header{
   height: 1000px;
   position: relative;
   margin: 20px;
+  z-index: 10000000;
+  /* box-shadow:  15px 1px 25px #1100AB; */
+}
+.container2{
+  width: 100vw;
+  height: 1000px;
+  position: relative;
   box-shadow:  15px 1px 25px #1100AB;
+  z-index: -1000;
+  visibility: hidden;
 }
 #mosca{
   background-image: url(img/mosca.jpg);
@@ -44,6 +53,9 @@ h1{
   text-shadow: 0.1em 0.1em 0.15em #1100AB;
   color: white;
 }
-.container:hover .opaco{
+.container:hover .opaco {
   display: block;
+}
+.container:hover .container2 {
+  visibility: visible;
 }
